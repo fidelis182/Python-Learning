@@ -19,3 +19,6 @@ print(age)
 #string concatenation in python
 #first method is to use + sign and the str() function to convert integers into strings
 print('There are ' + str(24) + ' hours in day ')
+
+#second method of string concatenation using the braces and f before the single quotes
+print(f'There are {24} hours in a day')
