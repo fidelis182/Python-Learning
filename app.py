@@ -42,10 +42,12 @@ def valiadte_input():
             print(calculated_value)
         elif number_input == 0:
              print("number entered is 0")
+        else:
+            print("The number entered is a negative number")
      except ValueError:
         print("the input is invalid")
 #user inputs
-number_of_days = input("Enter number od days\n")
+number_of_days = input("Enter number of days\n")
 valiadte_input()
 
 
