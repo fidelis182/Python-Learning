@@ -32,24 +32,20 @@ name_of_units = "hours"
 #num_of_days is the definition of function parameters
 
 def days_to_units(num_of_days):
-        if num_of_days > 0:
-            return f"{num_of_days} {num_of_days* calculation_hours } {name_of_units}"
-        elif num_of_days == 0:
-             print("the number entered is 0 and hours will be 0")
-        else:
-            return "The number entered is less than 0"
-#35 is a function parameter
-# days_to_units(35)
-# days_to_units(20)
-# days_to_units(30)
-# days_to_units(60)
+ return f"{num_of_days} {num_of_days* calculation_hours } {name_of_units}"
+def valiadte_input():
+     try :
 
+        number_input = int(number_of_days)
+        if number_input > 0:
+            calculated_value = days_to_units(number_input)
+            print(calculated_value)
+        elif number_input == 0:
+             print("number entered is 0")
+     except ValueError:
+        print("the input is invalid")
 #user inputs
 number_of_days = input("Enter number od days\n")
-if number_of_days.isdigit():
-    number_input = int(number_of_days)
-    calculated_value = days_to_units(number_input)
-    print(calculated_value)
-else:
-    print("the input is invalid")
+valiadte_input()
+
 
